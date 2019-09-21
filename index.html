@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  Name: Sijia Xiao (Lena)
+  Date: Nov. 14, 2018
+  Section: CSE 154 AE
+  This html file provides the web structure for a guessing words game.
+  It contains the information for word card display and input area.
+
+            ~~~~~~~~~~~~~~~~~
+          /                  \    |- - - -|
+        /    ( * )            \   |  +  | |
+      /                        \  |_____| |
+     +____________________________________|
+-->
+
+<html lang='en'>
+  <head>
+    <title>Words!</title>
+    <script src="index.js"></script>
+    <link href="index.css" rel='stylesheet' />
+  </head>
+  <body>
+    <header>Guess a Word!</header>
+    <main id='container'>
+      <div>
+        <button id="featured">Feature a Guess</button>
+        <button id="random">Random a Guess</button>
+      </div>
+      <div id='param-board' class='hidden'>
+        <div>
+          <label>Choose the Difficulty: </label>
+          <select id='difficulty'>
+            <option value="easy">Easy</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div>
+          <label>Choose an Alphabet:</label>
+          <input type="text" maxlength="1" name="alphabet" />
+        </div>
+      </div>
+      <div>
+        <button id='start-btn' class='hidden'>Collect a Word!</button>
+        <button id="word-list" class='hidden'>Get Vocabulary</button>
+      </div>
+      <div id='words'>
+        <div id="definition"></div>
+        <div id='letters'></div>
+        <div>
+          <button id='check' class='hidden'>Check Answer</button>
+          <button id='hint' class='hidden'>Give a Hint</button>
+        </div>
+      </div>
+      <div id='vocabulary' class='hidden'></div>
+    </main>
+    <footer id="copywrite">
+      <p>All text and images in this website &copy; Lena Xiao 2018
+      <img src="logo.png" alt="Logo" /></p>
+    </footer>
+  </body>
+</html>

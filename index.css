@@ -1,0 +1,130 @@
+/*
+  Name: Sijia Xiao (Lena)
+  Date: Nov. 14, 2018
+  Section: CSE 154 AE
+  This CSS file will add styles to the former html file. It provides
+  the style for header, word card and vocabulary sessions.
+
+            ~~~~~~~~~~~~~~~~~
+          /                  \    |- - - -|
+        /    ( * )            \   |  +  | |
+      /                        \  |_____| |
+     +____________________________________|
+*/
+
+body {
+  background-color: #F1F0E2;
+  font-family: sans-serif;
+}
+
+header {
+  font-size: 30pt;
+  text-align: center;
+  padding-top: 20pt;
+  padding-bottom: 10pt;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container div {
+  padding: 5px;
+  margin: 5px;
+}
+
+button, select, input[type=text] {
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border-radius: 0px;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin-bottom: 20px;
+  width: 150px;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: #F25652;
+  color: white;
+}
+
+select, input[type=text] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 150px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  height: 20px;
+  text-align: center;
+  text-align-last: center;
+}
+
+#words {
+  width: 80%;
+  margin-top: 50px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#letters input[type=text] {
+  font-size: 30pt;
+  width: 40px;
+  height: 50px;
+  margin: 10px;
+  padding: 5px;
+}
+
+#definition {
+  font-size: 20pt;
+  text-align: center;
+}
+
+#definition::first-letter {
+  text-transform: uppercase;
+  font-size: 40pt;
+  font-family: cursive, sans-serif;
+}
+
+#vocabulary ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#vocabulary ul li {
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#copywrite {
+  padding: 5px;
+  margin-top: 30px;
+}
+
+#copywrite p {
+  text-align: center;
+  font-size: 13px;
+}
+
+footer img {
+  width: 40px;
+  vertical-align: middle;
+}
